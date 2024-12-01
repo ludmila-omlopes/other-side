@@ -13,8 +13,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: 'Symbol Decoder Terminal',
-  description: 'Decode symbols into English and vice versa',
+  title: 'Talk to the Other Side...',
+  description: 'Be careful what you wish for.',
 }
 
 export default function RootLayout({
