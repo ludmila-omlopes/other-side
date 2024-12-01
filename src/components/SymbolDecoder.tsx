@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react'
 import { englishToSymbols, symbolsToEnglish, symbolMap } from '../utils/symbolTranslator'
-import Icon from './Icon'
 import AnimatedTitle from './AnimatedTitle'
 
 export default function SymbolDecoder() {
@@ -18,11 +17,6 @@ export default function SymbolDecoder() {
   const handleSymbolClick = (symbol: string) => {
     setSymbolText(prevSymbols => [...prevSymbols, symbol])
     setEnglishText(prevText => prevText + symbolsToEnglish([symbol]))
-  }
-
-  const handleClearSymbols = () => {
-    setSymbolText([])
-    setEnglishText('')
   }
 
   return (
