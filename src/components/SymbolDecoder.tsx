@@ -19,6 +19,11 @@ export default function SymbolDecoder() {
     setEnglishText(prevText => prevText + symbolsToEnglish([symbol]))
   }
 
+  const handleAddSpace = () => {
+    setSymbolText(prevSymbols => [...prevSymbols, ' '])
+    setEnglishText(prevText => prevText + ' ') 
+  }
+
   return (
     <>
       <div className="mb-8 text-center">
@@ -44,6 +49,12 @@ export default function SymbolDecoder() {
                 {symbol}
               </button>
             ))}
+            <button
+            onClick={handleAddSpace}
+            className="text-2xl p-2 border rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            Space
+          </button>
         </div>
       </div>
 

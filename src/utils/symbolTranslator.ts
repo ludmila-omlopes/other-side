@@ -35,7 +35,6 @@ const symbolMap: { [key: string]: string } = {
         "7": "7",
         "8": "8",
         "9": "9",
-        " ": "space",
   };
   
   const reverseSymbolMap: { [key: string]: string } = Object.entries(symbolMap).reduce((acc, [key, value]) => {
