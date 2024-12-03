@@ -24,10 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
+        <footer className="mt-12 text-center text-green-600">
+            This is a fan-made website. All rights to <a href="https://ordemparanormal.com.br/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Ordem Paranormal</a>.
+          <p className="mt-2">
+              Made with love by <a href="https://github.com/ludmila-omlopes" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Definn</a> 🩷
+            </p>
+      </footer>
       </body>
     </html>
   );

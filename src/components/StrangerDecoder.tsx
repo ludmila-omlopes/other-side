@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { englishToSymbols, symbolsToEnglish, symbolMap } from '../utils/symbolTranslator'
 import AnimatedTitle from './AnimatedTitle'
 
-export default function SymbolDecoder() {
+export default function StrangerDecoder() {
   const [englishText, setEnglishText] = useState('')
   const [symbolText, setSymbolText] = useState<string[]>([])
 
@@ -28,7 +28,7 @@ export default function SymbolDecoder() {
     <>
       <div className="mb-8 text-center">
         <AnimatedTitle 
-          text="Talk to the Other Side..." 
+          text="Talk to the Stranger..." 
           className="text-2xl font-bold mb-2"
         />
         <p className="text-green-600">v1.0.0</p>
@@ -44,7 +44,7 @@ export default function SymbolDecoder() {
               <button
                 key={char}
                 onClick={() => handleSymbolClick(symbol)}
-                className="text-2xl p-2 border rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 font-['SinaisEstrangeiro-Regular']"
+                className="text-3xl p-2 border rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 font-['SinaisEstrangeiro-Regular']"
               >
                 {symbol}
               </button>
@@ -71,7 +71,7 @@ export default function SymbolDecoder() {
       <div className="mb-8">
         <div className="flex items-center mb-2">
           <span className="text-yellow-400 mr-2">$</span>
-          <h2 className="text-xl">Speak to the other side. Be careful. It might respond.</h2>
+          <h2 className="text-xl">He wants to talk to you.</h2>
         </div>
         <textarea
           value={englishText}
@@ -81,14 +81,7 @@ export default function SymbolDecoder() {
         />
       </div>
 
-      <footer className="mt-12 text-center text-green-600">
-        <p>
-        </p>This is a fan-made website. All rights to <a href="https://ordemparanormal.com.br/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Ordem Paranormal</a>.
-       <p className="mt-2">
 
-          Made with love by <a href="https://github.com/ludmila-omlopes" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Definn</a> 🩷
-        </p>
-      </footer>
     </>
   )
 }

@@ -7,6 +7,11 @@
   src: url('/SinaisEstrangeiro-Regular2.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Sigilos-Regular';
+  src: url('/Sigilos-Regular.ttf') format('truetype');
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -22,5 +27,4 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
